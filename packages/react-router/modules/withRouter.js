@@ -32,7 +32,7 @@ function withRouter(Component) {
       wrappedComponentRef: PropTypes.func
     };
   }
-
+   // 保留 Component 中的静态方法
   return hoistStatics(C, Component);
 }
 
